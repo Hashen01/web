@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* General Styles */
+body {
+    color: #020102;
+}
+
+
+
+/* Checkout Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.checkout h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #020102;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.checkout-form, .order-summary {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d90429;
+}
+
+.checkout-form {
+    flex: 3;
+}
+
+.checkout-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #020102;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #020102;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-summary {
+    flex: 1;
+}
+
+.order-summary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #020102;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.summary-total {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #020102;
+    text-align: right;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #d90429;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #d90429;
+}
+
+footer {
+    background-color: #020102;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .checkout-form, .order-summary {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout h1 {
+        font-size: 2rem;
+    }
+
+    .order-summary h2, .checkout-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}

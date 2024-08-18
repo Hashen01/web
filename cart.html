@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Car Hub</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo">Car<span>Hub</span></a></div>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="car1.png" alt="Car 1">
+                    <div class="item-details">
+                        <h3>Car Model 1</h3>
+                        <p>$25,000</p>
+                        <div class="quantity">
+                            <label for="quantity1">Quantity:</label>
+                            <input type="number" id="quantity1" value="1" min="1">
+                        </div>
+                        <div class="car-options">
+                            <label for="color1">Color:</label>
+                            <select id="color1">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                            <label for="engine1">Engine Type:</label>
+                            <select id="engine1">
+                                <option value="v4">V4</option>
+                                <option value="v6">V6</option>
+                                <option value="v8">V8</option>
+                            </select>
+                        </div>
+                        <a href="cart.html" class="remove">Remove</a>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="car2.png" alt="Car 2">
+                    <div class="item-details">
+                        <h3>Car Model 2</h3>
+                        <p>$30,000</p>
+                        <div class="quantity">
+                            <label for="quantity2">Quantity:</label>
+                            <input type="number" id="quantity2" value="1" min="1">
+                        </div>
+                        <div class="car-options">
+                            <label for="color2">Color:</label>
+                            <select id="color2">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                            <label for="engine2">Engine Type:</label>
+                            <select id="engine2">
+                                <option value="v4">V4</option>
+                                <option value="v6">V6</option>
+                                <option value="v8">V8</option>
+                            </select>
+                        </div>
+                        <a href="cart.html" class="remove">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <h3>Total: $55,000</h3>
+                <a href="checkout.html" class="btn">Proceed to Checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-container container">
+                <div class="footer-box">
+                    <a href="index.html" class="logo">Car<span>Hub</span></a>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="index.html">Home</a>
+                    <a href="cars.html">Cars</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="login.html">Login</a>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                   <p>Carhub@gmail.com</p>
+                   <p>tele: 01113226</p>
+                   <p>fax: +326646121</p>
+                  
+                </div>
+            </div>
+        </section>
+    
+        <!--Copyright-->
+        <div class="copyright">
+            <p>&#169; Hashen Hansaka All Right Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
